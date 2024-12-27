@@ -1,60 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="10" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-19T17:54:42 IST" name="Default suite" finished-at="2023-07-19T17:55:09 IST" duration-ms="26350">
+  <suite started-at="2024-05-29T12:15:26 IST" name="suite" finished-at="2024-05-29T12:15:27 IST" duration-ms="731">
     <groups>
+      <group name="exploratory">
+        <method signature="Test1.closeBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" name="closeBrowser" class="Practice.Test1"/>
+        <method signature="Test1.testMethod()[pri:0, instance:Practice.Test1@1869fbd2]" name="testMethod" class="Practice.Test1"/>
+      </group> <!-- exploratory -->
+      <group name="functional">
+        <method signature="Test1.closeBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" name="closeBrowser" class="Practice.Test1"/>
+        <method signature="Test2.openBrowser()[pri:0, instance:Practice.Test2@1458ed9c]" name="openBrowser" class="Practice.Test2"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="Test1.closeBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" name="closeBrowser" class="Practice.Test1"/>
+        <method signature="Test1.login()[pri:0, instance:Practice.Test1@1869fbd2]" name="login" class="Practice.Test1"/>
+        <method signature="Test1.openBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" name="openBrowser" class="Practice.Test1"/>
+        <method signature="Test1.testMethod()[pri:0, instance:Practice.Test1@1869fbd2]" name="testMethod" class="Practice.Test1"/>
+        <method signature="Test2.logOut()[pri:0, instance:Practice.Test2@1458ed9c]" name="logOut" class="Practice.Test2"/>
+        <method signature="Test2.openBrowser()[pri:0, instance:Practice.Test2@1458ed9c]" name="openBrowser" class="Practice.Test2"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Test1.closeBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" name="closeBrowser" class="Practice.Test1"/>
+        <method signature="Test1.login()[pri:0, instance:Practice.Test1@1869fbd2]" name="login" class="Practice.Test1"/>
+        <method signature="Test2.logOut()[pri:0, instance:Practice.Test2@1458ed9c]" name="logOut" class="Practice.Test2"/>
+        <method signature="Test2.login()[pri:0, instance:Practice.Test2@1458ed9c]" name="login" class="Practice.Test2"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2023-07-19T17:54:42 IST" name="Default test" finished-at="2023-07-19T17:55:09 IST" duration-ms="26350">
-      <class name="AmazonScenarios.Scenario1">
-        <test-method signature="scenario()[pri:0, instance:AmazonScenarios.Scenario1@46b61c56]" started-at="2023-07-19T17:54:43 IST" name="scenario" finished-at="2023-07-19T17:55:09 IST" duration-ms="26155" status="FAIL">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA['com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
-at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:99)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at AmazonScenarios.Scenario1.scenario(Scenario1.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+    <test started-at="2024-05-29T12:15:26 IST" name="groupstest" finished-at="2024-05-29T12:15:27 IST" duration-ms="731">
+      <class name="Practice.Test2">
+        <test-method signature="logOut()[pri:0, instance:Practice.Test2@1458ed9c]" started-at="2024-05-29T12:15:27 IST" name="logOut" finished-at="2024-05-29T12:15:27 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scenario -->
-      </class> <!-- AmazonScenarios.Scenario1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- logOut -->
+        <test-method signature="login()[pri:0, instance:Practice.Test2@1458ed9c]" started-at="2024-05-29T12:15:27 IST" name="login" finished-at="2024-05-29T12:15:27 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="openBrowser()[pri:0, instance:Practice.Test2@1458ed9c]" started-at="2024-05-29T12:15:27 IST" name="openBrowser" finished-at="2024-05-29T12:15:27 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- Practice.Test2 -->
+      <class name="Practice.Test1">
+        <test-method signature="closeBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" started-at="2024-05-29T12:15:26 IST" name="closeBrowser" finished-at="2024-05-29T12:15:26 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="login()[pri:0, instance:Practice.Test1@1869fbd2]" started-at="2024-05-29T12:15:27 IST" name="login" finished-at="2024-05-29T12:15:27 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="openBrowser()[pri:0, instance:Practice.Test1@1869fbd2]" started-at="2024-05-29T12:15:27 IST" name="openBrowser" finished-at="2024-05-29T12:15:27 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testMethod()[pri:0, instance:Practice.Test1@1869fbd2]" started-at="2024-05-29T12:15:27 IST" name="testMethod" finished-at="2024-05-29T12:15:27 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+      </class> <!-- Practice.Test1 -->
+    </test> <!-- groupstest -->
+  </suite> <!-- suite -->
 </testng-results>
